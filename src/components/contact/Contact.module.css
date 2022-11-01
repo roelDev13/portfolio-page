@@ -1,0 +1,30 @@
+.display__contact{
+    background-color: rgb(225, 228, 230);
+    width: 100%;
+    height: 40vh;
+}
+
+.display__title{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.display__container{
+    padding-top: 2.5rem;
+    width: 91%;
+    display: flex;
+    padding-left: 10rem;
+    text-align: center;
+}
+
+.display__email{
+    display: contents;
+    color: blue;
+}
+
+@media screen and (max-width: 834px)  {
+    .display__contact{
+        height: fit-content;
+    }
+}

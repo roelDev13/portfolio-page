@@ -1,0 +1,78 @@
+.container{
+    display: block;
+    gap: 3rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.logo{
+    padding-left: 4%;
+    padding-top: 3%;
+}
+
+.font__logo{
+    transform: scale(4);
+    padding-left: 13%;
+}
+
+.logo__name{
+    display: block;
+    padding-top: 2rem; 
+}
+
+.row__division{
+    display: flex;
+    gap: 3rem;
+    padding-top: 4rem; 
+    align-items: center;
+    padding: 3rem;
+    padding-left: 3rem;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1214px) {
+    .font__logo{
+        transform: scale(2);
+    }   
+
+    .row__division{
+        padding-left: 4rem;
+        gap: 1rem;
+
+    }
+
+    .logo__name{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 866px) {
+    .font__logo{
+        transform: scale(1);
+    }   
+
+    .row__division{
+        padding-left: 2rem;
+        gap: 1rem;
+        
+    }
+
+    .logo__name{
+        font-size: 69%;
+    }
+}
+
+@media screen and (max-width: 746px) {
+    .font__logo{
+        transform: scale(1);
+    }   
+
+    .row__division{
+        padding-left: 2rem;
+        gap: 0.3rem;
+    }
+
+    .logo__name{
+        font-size: 45%;
+    }
+}

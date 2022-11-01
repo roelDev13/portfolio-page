@@ -1,0 +1,65 @@
+.display__skills{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(233, 236, 239);
+}
+
+.display__title{
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+}
+
+.display__skillTitles{
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+    gap: 3rem;
+}
+
+.tech__skills{
+    width: 26rem;
+    padding: 1rem;
+    color: black;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.tech__skills__selected{
+    width: 26rem;
+    padding: 1rem;
+    color: white;
+    background-color: #0d6efd;
+    border: none;
+    cursor: pointer;
+}
+
+.soft__skills{
+    width: 26rem;
+    padding: 1rem;
+    color: black;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.soft__skills__selected{
+    width: 26rem;
+    padding: 1rem;
+    color: white;
+    background-color: #0d6efd;
+    border: none;
+    cursor: pointer;
+}
+
+.display__screen{
+    background-color: white;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+    width: 60%;
+    height: 50vh;
+    border-radius: 0.5rem;
+}
