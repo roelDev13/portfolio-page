@@ -1,0 +1,116 @@
+*,*::after,*::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+li{
+    list-style: none;
+    padding: 2.1rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 2rem 1.7rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0%;
+    background: rgba(202, 208, 217, 0.456);
+}
+
+.name{
+    text-transform: uppercase;
+    font-weight: bold; 
+    padding-left: 2.5rem;   
+}
+
+.nav__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0rem;
+}
+
+.nav__toggler div{
+    width: 3rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: black;
+}
+
+.nav__toggler{
+    cursor: pointer;
+    display: none;
+}
+
+.nav__item:hover{
+    background: rgba(202, 208, 217, 0.536);
+    cursor: pointer;    
+}
+
+@media screen and (max-width: 768px) {
+    .nav__toggler{
+        display: block;
+        padding-left: 60%;
+    }
+
+    .nav__menu{
+        position: fixed;
+        display: grid;
+        top: 10vh;
+        right: 0;
+        width: 100%;
+        padding-right: 37rem;
+        height: fit-content;
+        background: rgba(202, 208, 217, 0.456);
+        flex-direction: column;
+        transform: translateX(100%);
+    }
+}
+
+.nav__active {
+    transform: translateX(0%);
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+/*Toggler Icon Animation*/
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-4px,5px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-4px,-5px);
+}
+
+/*Animations*/
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
