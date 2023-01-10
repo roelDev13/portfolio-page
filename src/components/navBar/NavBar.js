@@ -40,7 +40,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li className={styles.nav__item} >
-          <a href="/#" className="nav__link">
+          <a href="https://drive.google.com/file/d/1lsRWp2GGCtRTH-FzX9yb4CmI6gdQX7_e/view?usp=sharing" className="nav__link">
             Resume
           </a>
         </li>
