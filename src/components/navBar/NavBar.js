@@ -4,24 +4,6 @@ import styles from "./NavBar.module.css";
 
 const NavBar = () => {
   const [active, setActive] = useState(styles.nav__menu);
-  // const {ref1,ref2,ref3} = ref;
-  // const {aboutRef, projectsRef, skillsRef} = ref;
-  
-  // const scrollToSection = (elementRef) => {
-  //   window.scrollTo({
-  //     top: elementRef.current.offsetTop,
-  //     behavior: "smooth",
-  //   });
-  // };
-
-  // const handleScroll = (elemRef) => {
-  //   console.log("ref: " + JSON.stringify(elemRef));
-  //   window.scrollTo({
-  //     top: elemRef.current.offsetTop,
-  //     left: 0,
-  //     behavior: "smooth",
-  //   });
-  // };
 
   const navHandler = () => {
     active === styles.nav__menu
@@ -30,7 +12,7 @@ const NavBar = () => {
   };
   return (
     <nav className={styles.nav}>
-      <a href="/#" className={styles.name}>
+      <a href="https://roeldev13.github.io/portfolio-page/" className={styles.name}>
         {"<RoelDev />"}
       </a>
       <ul className={active}>
